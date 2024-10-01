@@ -4,7 +4,7 @@ pipelines:
     group: Terraform
     materials:
       git-da613e5:
-        git: https://github.com/
+        git: https://github.com/saiyadaz/roboshop-terraform.git
         shallow_clone: false
         auto_update: true
         branch: main
@@ -33,4 +33,4 @@ pipelines:
 #           terraform-apply:
 #             tasks:
 #             - exec: {command: terraform, arguments: [ "init", "-backend-config=env-prod/state.tfvars" ], run_if: passed}
-#             - exec: {command: terraform, arguments: [ "apply", "-var-file=env-prod/main.tfvars", "-auto-approve" ], run_if: passed}
+#             - exec: {command: terraform, arguments: [ "apply", "-var-file=env-prod/main.tfvars", "-auto-approve" ], run_if: passed}v-prod/main.tfvars", "-auto-approve" ], run_if: passed}
