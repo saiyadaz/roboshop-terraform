@@ -3,7 +3,7 @@ variable "components"{
 
 }
 
-resource "aws_instance" "instance" {
+resource "aws_instance" "instance"{
   count         = length(var.components)
   ami           =  "ami-09c813fb71547fc4f from us-east-1"
   instance_type = "t3.small"
